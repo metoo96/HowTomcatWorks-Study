@@ -30,7 +30,7 @@ public class Response {
     byte[] bytes = new byte[BUFFER_SIZE];
     FileInputStream fis = null;
     try {
-      //读取请求文件
+      // 读取请求文件
       File file = new File(HttpServer.WEB_ROOT, request.getUri());
       if (file.exists()) {
         fis = new FileInputStream(file);
